@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        header .logo{
+            display: flex;
+            flex-direction: row;
+            font-size: 10px;
+        }
+        header img{
+            overflow: hidden;
+            width: 50px;
+            height: auto;
+            margin-left: 40px;
+        }
+        header .links{
+           display: flex;
+           gap: 50px;
+           margin-right: 40px;
+           margin-top: 13px;
+        }
+        header .links a{
+          text-decoration: none;
+          list-style-type: none;
+          color:black;
+
+        }
+        header .logo > h2{
+            margin-top: 15px;
+        }
+        header .links .red{
+            color: red;
+        }
+    </style>
+    <header>
+        <div class="logo">
+      <img src="abstract-geometric-box-logo-design-260nw-1995359300.webp">
+      <h2>The Box</h2>
+    </div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Location</a>
+        <a href="#" class="red">Contact us</a>
+      </div>
+    </header>
+    <style>
+        section{
+            background-image: url('istockphoto-184962061-2048x2048.webp');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+}
+ section h1{
+   margin-top: 20%;
+   font-size: 53px;
+   width: 50%;
+   margin-left: 40px;
+   font-weight: 700;
+
+ }
+ section .box{
+    margin-top: 35%;
+    border: 2px solid blue;
+    background-color: blue;
+    height: 100px;
+    text-align: center;
+    line-height: 2;
+ }
+
+    </style>
+    <section>
+     <h1>Building things is our mission.</h1>
+     <div class="box">
+        <form>
+            <h3>Features</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button>← Back</button>
+            <button>New →</button>
+        </form>
+     </div>
+    </section>
+    <div class="footer">
+      <h1>Our Reputations</h1>
+      <div class="boxes">
+        <span>
+          <h3>Best Services</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+        </span>
+        <span>
+          <h3>Best Teams</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+        </span>
+        <span>
+          <h3>Best Designs</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+        </span>
+        
+      </div>
+    </div>
+</body>
+</html>
