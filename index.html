@@ -4,119 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        header{
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
         }
-        header .logo{
+        header .logo {
             display: flex;
-            flex-direction: row;
+            align-items: center;
             font-size: 10px;
         }
-        header img{
-            overflow: hidden;
-            width: 50px;
+        header img {
+            width: 40px;
             height: auto;
-            margin-left: 40px;
+            margin-right: 10px;
         }
-        header .links{
-           display: flex;
-           gap: 50px;
-           margin-right: 40px;
-           margin-top: 13px;
+        header .links {
+            display: flex;
+            gap: 20px;
         }
-        header .links a{
-          text-decoration: none;
-          list-style-type: none;
-          color:black;
-
+        header .links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: color 0.3s;
         }
-        header .logo > h2{
-            margin-top: 15px;
+        header .links a:hover {
+            color: blue;
         }
-        header .links .red{
+        header .links .red {
             color: red;
         }
+
+        section {
+            background-image: url('istockphoto-184962061-2048x2048.webp');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 50vh;
+            padding: 20px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        section h1 {
+            font-size: 5vw;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        section .box {
+            background-color: rgba(0, 0, 255, 0.8);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            color: white;
+        }
+        section .box h3 {
+            margin-bottom: 10px;
+        }
+        section .box button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        section .box button:hover {
+            background-color: white;
+            color: blue;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+        }
+        .footer h1 {
+            margin-bottom: 30px;
+        }
+        .footer .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .footer .boxes span {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            max-width: 90%;
+        }
+        .footer .boxes span h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header .links {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            section {
+                align-items: center;
+                text-align: center;
+            }
+            section h1 {
+                font-size: 8vw;
+            }
+            .footer .boxes {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
+</head>
+<body>
     <header>
         <div class="logo">
-      <img src="abstract-geometric-box-logo-design-260nw-1995359300.webp">
-      <h2>The Box</h2>
-    </div>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Location</a>
-        <a href="#" class="red">Contact us</a>
-      </div>
+            <img src="abstract-geometric-box-logo-design-260nw-1995359300.webp" alt="Logo">
+            <h2>The Box</h2>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Location</a>
+            <a href="#" class="red">Contact us</a>
+        </div>
     </header>
-    <style>
-        section{
-            background-image: url('istockphoto-184962061-2048x2048.webp');
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50vh;
-    width: 100%;
-}
- section h1{
-   margin-top: 20%;
-   font-size: 53px;
-   width: 50%;
-   margin-left: 40px;
-   font-weight: 700;
-
- }
- section .box{
-    margin-top: 35%;
-    border: 2px solid blue;
-    background-color: blue;
-    height: 100px;
-    text-align: center;
-    line-height: 2;
- }
-
-    </style>
     <section>
-     <h1>Building things is our mission.</h1>
-     <div class="box">
-        <form>
-            <h3>Features</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <button>← Back</button>
-            <button>New →</button>
-        </form>
-     </div>
+        <h1>Building things is our mission.</h1>
+        <div class="box">
+            <form>
+                <h3>Features</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <button>← Back</button>
+                <button>New →</button>
+            </form>
+        </div>
     </section>
     <div class="footer">
-      <h1>Our Reputations</h1>
-      <div class="boxes">
-        <span>
-          <h3>Best Services</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
-        </span>
-        <span>
-          <h3>Best Teams</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
-        </span>
-        <span>
-          <h3>Best Designs</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
-        </span>
-        
-      </div>
+        <h1>Our Reputations</h1>
+        <div class="boxes">
+            <span>
+                <h3>Best Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+            </span>
+            <span>
+                <h3>Best Teams</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+            </span>
+            <span>
+                <h3>Best Designs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dicta?</p>
+            </span>
+        </div>
     </div>
 </body>
 </html>
+
